@@ -1,0 +1,58 @@
+{
+  "name": "{{projectName}}",
+  "version": "1.0.0",
+  "description": "My Moleculer microservice",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot service.js",
+    "start": "moleculer-runner service.js"{{#jest}},
+    "ci": "jest --watch",
+    "test": "jest --coverage"{{/jest}}{{#lint}},
+    "lint": "eslint services"{{/lint}}
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    {{#lint}}
+    "eslint": "4.6.1",
+    {{/lint}}
+    {{#jest}}
+    "jest": "20.0.4",
+    "jest-cli": "20.0.4",
+    {{/jest}}
+    "moleculer-repl": "^0.3.0"
+  },
+  "dependencies": {
+    {{#apiGW}}
+    "moleculer-web": "^0.5.0",
+    {{/apiGW}}
+    {{#if_eq transporter "NATS"}}
+    "nats": "0.7.20",
+    {{/if_eq}}
+    {{#if_eq transporter "MQTT"}}
+    "mqtt": "2.11.0",
+    {{/if_eq}}
+    {{#if_eq transporter "AMQP"}}
+    "amqplib": "0.5.1",
+    {{/if_eq}}
+    {{#if_eq transporter "Redis"}}
+    "ioredis": "3.1.2",
+    {{/if_eq}}
+    {{#if_eq cacher "Redis"}}
+    "ioredis": "3.1.2",
+    {{/if_eq}}
+    "moleculer": "^0.11.0"
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  }{{#jest}},
+  "jest": {
+    "testEnvironment": "node",
+    "rootDir": "./services",
+    "roots": [
+      "../test"
+    ]
+  }{{/jest}}
+}
