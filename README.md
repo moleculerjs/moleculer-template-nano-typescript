@@ -1,4 +1,4 @@
-# Moleculer templates: `nano`
+# Moleculer template: `nano`
 :mortar_board: Minimal project template for one microservice.
 
 ## Features
