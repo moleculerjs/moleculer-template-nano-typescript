@@ -16,11 +16,11 @@
   "author": "",
   "devDependencies": {
     {{#lint}}
-    "eslint": "4.6.1",
+    "eslint": "^4.15.0",
     {{/lint}}
     {{#jest}}
-    "jest": "20.0.4",
-    "jest-cli": "20.0.4",
+    "jest": "^22.0.4",
+    "jest-cli": "^22.0.4",
     {{/jest}}
     "moleculer-repl": "^0.3.0"
   },
@@ -29,19 +29,19 @@
     "moleculer-web": "^0.5.0",
     {{/apiGW}}
     {{#if_eq transporter "NATS"}}
-    "nats": "0.7.20",
+    "nats": "^0.7.0",
     {{/if_eq}}
     {{#if_eq transporter "MQTT"}}
-    "mqtt": "2.11.0",
+    "mqtt": "^2.11.0",
     {{/if_eq}}
     {{#if_eq transporter "AMQP"}}
-    "amqplib": "0.5.1",
+    "amqplib": "^0.5.0",
     {{/if_eq}}
     {{#if_eq transporter "Redis"}}
-    "ioredis": "3.1.2",
+    "ioredis": "^3.2.0",
     {{/if_eq}}
     {{#if_eq cacher "Redis"}}
-    "ioredis": "3.1.2",
+    "ioredis": "^3.2.0",
     {{/if_eq}}
     "moleculer": "^0.11.0"
   },
