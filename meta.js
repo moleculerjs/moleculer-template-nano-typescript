@@ -43,12 +43,20 @@ module.exports = function(values) {
 				name: "jest",
 				message: "Setup unit tests with Jest?",
 				default: true
+			},
+			{
+				type: "confirm",
+				name: "docker",
+				message: "Create Dockerfile?",
+				default: true
 			}			
 		],
 
 		"filters": {
 			".eslintrc.js": "lint",
 			"test/**/*": "jest",
+			"Dockerfile": "docker",
+			".dockerignore": "docker",
 		},
 
 		completeMessage: `
