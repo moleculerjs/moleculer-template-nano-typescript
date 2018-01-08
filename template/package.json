@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "My Moleculer microservice",
   "scripts": {
-    "dev": "moleculer-runner --env --repl --hot service.js",
-    "start": "moleculer-runner --env service.js"{{#jest}},
+    "dev": "moleculer-runner --repl --hot service.js",
+    "start": "moleculer-runner service.js"{{#jest}},
     "ci": "jest --watch",
     "test": "jest --coverage"{{/jest}}{{#lint}},
     "lint": "eslint services"{{/lint}}
