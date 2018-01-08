@@ -15,7 +15,8 @@ module.exports = {
     "rules": {
         "indent": [
             "warn",
-            "tab"
+            "tab",
+            { SwitchCase: 1 }
         ],
         "quotes": [
             "warn",
@@ -32,6 +33,9 @@ module.exports = {
             "off"
         ],
         "no-unused-vars": [
+            "warn"
+        ],
+        "no-mixed-spaces-and-tabs": [
             "warn"
         ]
     }
