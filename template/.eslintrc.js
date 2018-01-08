@@ -1,5 +1,5 @@
 module.exports = {
-    root: true,
+    "root": true,
     "env": {
         "node": true,
         "commonjs": true,
@@ -16,7 +16,7 @@ module.exports = {
         "indent": [
             "warn",
             "tab",
-            { SwitchCase: 1 }
+            { "SwitchCase": 1 }
         ],
         "quotes": [
             "warn",
