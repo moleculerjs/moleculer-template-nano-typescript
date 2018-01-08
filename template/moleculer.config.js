@@ -1,7 +1,5 @@
 "use strict";
 
-const Moleculer = require("moleculer");
-
 module.exports = {
 	namespace: "dev",
 	nodeID: null,
@@ -27,7 +25,7 @@ module.exports = {
 	disableBalancer: false,
 
 	registry: {
-		strategy: Moleculer.Strategies.RoundRobin,
+		strategy: "RoundRobin",
 		preferLocal: true				
 	},
 

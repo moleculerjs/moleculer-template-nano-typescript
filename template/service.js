@@ -4,11 +4,23 @@ module.exports = {
 	name: "greeter",
 
 	/**
-	 * Default settings
+	 * Service settings
 	 */
 	settings: {
 
 	},
+
+	/**
+	 * Service metadata
+	 */
+	metadata: {
+
+	},
+
+	/**
+	 * Service dependencies
+	 */
+	//dependencies: [],	
 
 	/**
 	 * Actions
