@@ -1,5 +1,5 @@
 # Moleculer template: `nano`
-:mortar_board: Minimal project template for one microservice.
+:mortar_board: Minimal project template for one Moleculer microservice.
 
 ## Features
 - Moleculer v0.11.x with `moleculer.config.js`
@@ -19,7 +19,7 @@ $ moleculer init nano my-project
 
 ## Prompts
 ```
-$ moleculer init nano moleculer-nano
+$ moleculer init nano my-project
 
 Template repo: ice-services/moleculer-template-nano
 ? Select a transporter NATS (recommended)
@@ -32,16 +32,16 @@ Create 'moleculer-nano' folder...
 ```
 
 ## NPM scripts
-- `npm run dev` - Start service.js in hot-reload and start REPL
-- `npm lint` - Run ESLint
+- `npm run dev` - Start service.js with hot-reloading and REPL.
+- `npm lint` - Run linting
 - `npm run ci` - Start testing in watch mode
 - `npm start` - Start service.js in production mode
-- `npm test` - Run tests & coverage
+- `npm test` - Run tests & generate coverage report
 
 ## License
 This template is available under the [MIT license](https://tldrlegal.com/license/mit-license).
 
 ## Contact
-Copyright (c) 2017 Ice-Services
+Copyright (c) 2018 Ice-Services
 
 [![@ice-services](https://img.shields.io/badge/github-ice--services-green.svg)](https://github.com/ice-services) [![@MoleculerJS](https://img.shields.io/badge/twitter-MoleculerJS-blue.svg)](https://twitter.com/MoleculerJS)
