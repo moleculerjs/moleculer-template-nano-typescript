@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ice-services/moleculer-template-nano.git"
+    "url": "git+https://github.com/moleculerjs/moleculer-template-nano.git"
   },
   "keywords": [],
-  "author": "Ice Services",
+  "author": "MoleculerJS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ice-services/moleculer-template-nano/issues"
+    "url": "https://github.com/moleculerjs/moleculer-template-nano/issues"
   },
-  "homepage": "https://github.com/ice-services/moleculer-template-nano#readme"
+  "homepage": "https://github.com/moleculerjs/moleculer-template-nano#readme"
 }

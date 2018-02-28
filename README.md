@@ -11,7 +11,7 @@
 
 
 ## Install
-To install use the [moleculer-cli](https://github.com/ice-services/moleculer-cli) tool.
+To install use the [moleculer-cli](https://github.com/moleculerjs/moleculer-cli) tool.
 
 ```bash
 $ moleculer init nano my-project
@@ -21,7 +21,7 @@ $ moleculer init nano my-project
 ```
 $ moleculer init nano my-project
 
-Template repo: ice-services/moleculer-template-nano
+Template repo: moleculerjs/moleculer-template-nano
 ? Select a transporter NATS (recommended)
 ? Would you like use cache? Yes
 ? Select a cacher solution Memory
@@ -44,4 +44,4 @@ This template is available under the [MIT license](https://tldrlegal.com/license
 ## Contact
 Copyright (c) 2018 Ice-Services
 
-[![@ice-services](https://img.shields.io/badge/github-ice--services-green.svg)](https://github.com/ice-services) [![@MoleculerJS](https://img.shields.io/badge/twitter-MoleculerJS-blue.svg)](https://twitter.com/MoleculerJS)
+[![@moleculerjs](https://img.shields.io/badge/github-ice--services-green.svg)](https://github.com/moleculerjs) [![@MoleculerJS](https://img.shields.io/badge/twitter-MoleculerJS-blue.svg)](https://twitter.com/MoleculerJS)
