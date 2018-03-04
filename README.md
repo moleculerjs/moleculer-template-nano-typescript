@@ -5,6 +5,7 @@
 - Moleculer v0.11.x with `moleculer.config.js`
 - Simple project with a demo `greeter` service
 - Transporter & Cacher
+- Docker & Docker Compose files
 - Unit tests with [Jest](http://facebook.github.io/jest/)
 - Lint with [ESLint](http://eslint.org/)
 - Launch file for debugging in [VSCode](https://code.visualstudio.com/)
@@ -25,6 +26,7 @@ Template repo: moleculerjs/moleculer-template-nano
 ? Select a transporter NATS (recommended)
 ? Would you like use cache? Yes
 ? Select a cacher solution Memory
+? Add Docker files? Yes
 ? Use ESLint to lint your code? Yes
 ? Setup unit tests with Jest? Yes
 Create 'moleculer-nano' folder...
@@ -42,6 +44,6 @@ Create 'moleculer-nano' folder...
 This template is available under the [MIT license](https://tldrlegal.com/license/mit-license).
 
 ## Contact
-Copyright (c) 2018 Ice-Services
+Copyright (c) 2018 MoleculerJS
 
 [![@moleculerjs](https://img.shields.io/badge/github-moleculerjs-green.svg)](https://github.com/moleculerjs) [![@MoleculerJS](https://img.shields.io/badge/twitter-MoleculerJS-blue.svg)](https://twitter.com/MoleculerJS)

@@ -1,24 +1,26 @@
 "use strict";
 
 module.exports = {
-	namespace: "dev",
+	namespace: "",
 	nodeID: null,
 
 	logger: true,
 	logLevel: "info",
 	logFormatter: "default",
+	{{#needTransporter}}
 
 	transporter: "{{transporter}}",
+	{{/needTransporter}}
 	{{#needCacher}}
-	
+
 	cacher: "{{cacher}}",
 	{{/needCacher}}
 
-	serializer: null,
+	serializer: "JSON",
 
-	requestTimeout: 0 * 1000,
+	requestTimeout: 10 * 1000,
 	requestRetry: 0,
-	maxCallLevel: 0,
+	maxCallLevel: 100,
 	heartbeatInterval: 5,
 	heartbeatTimeout: 15,
 
@@ -26,7 +28,7 @@ module.exports = {
 
 	registry: {
 		strategy: "RoundRobin",
-		preferLocal: true				
+		preferLocal: true
 	},
 
 	circuitBreaker: {
@@ -44,5 +46,25 @@ module.exports = {
 	statistics: false,
 	internalActions: true,
 
-	hotReload: false
+	hotReload: false,
+
+	replCommands: null,
+
+	// Register middlewares
+	middlewares: [],
+
+	// Called after broker created.
+	created(broker) {
+		
+	},
+
+	// Called after broker starte.
+	started(broker) {
+
+	},
+
+	// Called after broker stopped.
+	stopped(broker) {
+
+	}
 };

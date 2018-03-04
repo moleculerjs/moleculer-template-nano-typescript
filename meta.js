@@ -8,12 +8,15 @@ module.exports = function(values) {
 				name: "transporter",
 				message: "Select a transporter",
 				choices: [
-					{ name: "NATS (recommended)", value: "NATS" },
+					{ name: "TCP", value: "TCP" },
+					{ name: "NATS", value: "NATS" },
 					{ name: "MQTT", value: "MQTT" },
 					{ name: "AMQP", value: "AMQP" },
-					{ name: "Redis", value: "Redis" }
+					{ name: "Redis", value: "Redis" },
+					{ name: "NATS Streaming", value: "STAN" },
+					{ name: "Kafka", value: "Kafka" }
 				],
-				default: "NATS"
+				default: "TCP"
 			},
 			{
 				type: "confirm",
@@ -34,6 +37,12 @@ module.exports = function(values) {
 			},
 			{
 				type: "confirm",
+				name: "docker",
+				message: "Add Docker files?",
+				default: true
+			},			
+			{
+				type: "confirm",
 				name: "lint",
 				message: "Use ESLint to lint your code?",
 				default: true
@@ -43,20 +52,15 @@ module.exports = function(values) {
 				name: "jest",
 				message: "Setup unit tests with Jest?",
 				default: true
-			},
-			{
-				type: "confirm",
-				name: "docker",
-				message: "Create Dockerfile?",
-				default: true
-			}			
+			}		
 		],
 
 		"filters": {
 			".eslintrc.js": "lint",
 			"test/**/*": "jest",
-			"Dockerfile": "docker",
 			".dockerignore": "docker",
+			"docker-compose.*": "docker",
+			"Dockerfile": "docker"
 		},
 
 		completeMessage: `

@@ -6,8 +6,11 @@
 # Install dependencies
 npm install
 
-# Start development mode with REPL
+# Start developing with REPL
 npm run dev
+
+# Start production
+npm start
 {{#jest}}
 
 # Run unit tests
@@ -22,3 +25,17 @@ npm run ci
 npm run lint
 {{/lint}}
 ```
+
+{{#docker}}
+## Run in Docker
+
+**Build Docker image**
+```bash
+$ docker build -t {{projectName}} .
+```
+
+**Start container**
+```bash
+$ docker run -d {{projectName}}
+```
+{{/docker}}
