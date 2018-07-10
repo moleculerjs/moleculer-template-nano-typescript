@@ -55,6 +55,15 @@ module.exports = function(values) {
 			}		
 		],
 
+		metalsmith: {
+			before(metalsmith) {
+				const data = metalsmith.metadata();
+				data.needTransporter = !! data.transporter;
+				data.redis = data.cacher == "Redis" || data.transporter == "Redis";
+				data.hasDepends = (data.needCacher && data.cacher !== 'Memory') || (data.needTransporter && data.transporter != "TCP");
+			}
+		},		
+
 		"filters": {
 			".eslintrc.js": "lint",
 			"test/**/*": "jest",
