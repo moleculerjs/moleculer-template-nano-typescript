@@ -7,7 +7,7 @@
 - Transporter & Cacher
 - Docker & Docker Compose files
 - Unit tests with [Jest](http://facebook.github.io/jest/)
-- Lint with [TSLint](http://eslint.org/)
+- Lint with [TSLint](https://palantir.github.io/tslint/)
 - Launch file for debugging in [VSCode](https://code.visualstudio.com/)
 
 
