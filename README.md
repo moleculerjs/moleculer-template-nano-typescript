@@ -1,13 +1,13 @@
-# Moleculer template: `nano`
-:mortar_board: Minimal project template for one Moleculer microservice.
+# Moleculer template: `nano-ts`
+:mortar_board: Minimal project template for one Moleculer microservice with typescript.
 
 ## Features
-- Moleculer v0.11.x with `moleculer.config.js`
+- Moleculer v0.13.x with `moleculer.config.ts`
 - Simple project with a demo `greeter` service
 - Transporter & Cacher
 - Docker & Docker Compose files
 - Unit tests with [Jest](http://facebook.github.io/jest/)
-- Lint with [ESLint](http://eslint.org/)
+- Lint with [TSLint](http://eslint.org/)
 - Launch file for debugging in [VSCode](https://code.visualstudio.com/)
 
 
@@ -15,19 +15,19 @@
 To install use the [moleculer-cli](https://github.com/moleculerjs/moleculer-cli) tool.
 
 ```bash
-$ moleculer init nano my-project
+$ moleculer init nano-ts my-project
 ```
 
 ## Prompts
 ```
-$ moleculer init nano my-project
+$ moleculer init nano-ts my-project
 
 Template repo: moleculerjs/moleculer-template-nano
 ? Select a transporter NATS (recommended)
 ? Would you like use cache? Yes
 ? Select a cacher solution Memory
 ? Add Docker files? Yes
-? Use ESLint to lint your code? Yes
+? Use TSLint to lint your code? Yes
 ? Setup unit tests with Jest? Yes
 Create 'moleculer-nano' folder...
 ? Would you like to run 'npm install'? Yes

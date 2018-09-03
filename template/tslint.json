@@ -1,22 +1,12 @@
-module.exports = {
-    "root": true,
-    "env": {
-        "node": true,
-        "commonjs": true,
-        "es6": true,
-        "jquery": false,
-        "jest": true,
-        "jasmine": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "sourceType": "module"
-    },
+{
+    "extends": "tslint:recommended",
     "rules": {
         "indent": [
             "warn",
             "tab",
-            { "SwitchCase": 1 }
+            {
+                "SwitchCase": 1
+            }
         ],
         "quotes": [
             "warn",
@@ -39,4 +29,4 @@ module.exports = {
             "warn"
         ]
     }
-};
+}

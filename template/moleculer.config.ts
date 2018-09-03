@@ -1,7 +1,8 @@
 "use strict";
+import { BrokerOptions, Errors, ServiceBroker } from "moleculer";
 
 // More info about options: https://moleculer.services/docs/0.13/broker.html#Broker-options
-module.exports = {
+const brokerConfig: BrokerOptions = {
 	namespace: "",
 	nodeID: null,
 
@@ -27,7 +28,7 @@ module.exports = {
 		delay: 100,
 		maxDelay: 1000,
 		factor: 2,
-		check: err => err && !!err.retryable
+		check: (err: Errors.MoleculerRetryableError) => err && !!err.retryable,
 	},
 
 	maxCallLevel: 100,
@@ -52,7 +53,7 @@ module.exports = {
 		windowTime: 60,
 		minRequestCount: 20,
 		halfOpenTime: 10 * 1000,
-		check: err => err && err.code >= 500
+		check: (err: Errors.MoleculerRetryableError) => err && err.code >= 500,
 	},
 
 	bulkhead: {
@@ -76,19 +77,21 @@ module.exports = {
 	middlewares: [],
 
 	// Called after broker created.
-	created(broker) {
+	created(broker: ServiceBroker) {
 		
 	},
 
 	// Called after broker starte.
-	started(broker) {
+	started(broker: ServiceBroker) {
 
 	},
 
 	// Called after broker stopped.
-	stopped(broker) {
+	stopped(broker: ServiceBroker) {
 
 	},
 
 	replCommands: null
 };
+
+export = brokerConfig;

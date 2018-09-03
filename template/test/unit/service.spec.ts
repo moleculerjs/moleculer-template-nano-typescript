@@ -18,7 +18,7 @@ describe("Test 'greeter' service", () => {
 		});
 
 	});
-	
+
 	describe("Test 'greeter.welcome' action", () => {
 
 		it("should return with 'Welcome'", () => {

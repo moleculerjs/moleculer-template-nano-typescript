@@ -21,7 +21,7 @@ npm run ci
 {{/jest}}
 {{#lint}}
 
-# Run ESLint
+# Run TSLint
 npm run lint
 {{/lint}}
 ```

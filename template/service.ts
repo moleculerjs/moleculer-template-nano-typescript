@@ -1,6 +1,7 @@
 "use strict";
+import { ServiceSchema } from "moleculer";
 
-module.exports = {
+const Service: ServiceSchema = {
 	name: "greeter",
 
 	/**
@@ -68,14 +69,16 @@ module.exports = {
 	/**
 	 * Service started lifecycle event handler
 	 */
-	started() {
+	// started() {
 
-	},
+	// },
 
 	/**
 	 * Service stopped lifecycle event handler
 	 */
-	stopped() {
+	// stopped() {
 
-	}	
+	// }
 };
+
+export = Service;

@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function(values) {
+module.exports = function (values) {
 	return {
 		questions: [
 			{
@@ -40,11 +40,11 @@ module.exports = function(values) {
 				name: "docker",
 				message: "Add Docker files?",
 				default: true
-			},			
+			},
 			{
 				type: "confirm",
 				name: "lint",
-				message: "Use ESLint to lint your code?",
+				message: "Use TSLint to lint your code?",
 				default: true
 			},
 			{
@@ -52,20 +52,20 @@ module.exports = function(values) {
 				name: "jest",
 				message: "Setup unit tests with Jest?",
 				default: true
-			}		
+			}
 		],
 
 		metalsmith: {
 			before(metalsmith) {
 				const data = metalsmith.metadata();
-				data.needTransporter = !! data.transporter;
+				data.needTransporter = !!data.transporter;
 				data.redis = data.cacher == "Redis" || data.transporter == "Redis";
 				data.hasDepends = (data.needCacher && data.cacher !== 'Memory') || (data.needTransporter && data.transporter != "TCP");
 			}
-		},		
+		},
 
 		"filters": {
-			".eslintrc.js": "lint",
+			"tslint.json": "lint",
 			"test/**/*": "jest",
 			".dockerignore": "docker",
 			"docker-compose.*": "docker",
