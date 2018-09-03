@@ -1,20 +1,20 @@
 {
-  "name": "moleculer-template-nano",
+  "name": "moleculer-template-nano-typescript",
   "version": "1.0.0",
-  "description": "Minimal project template for one microservice.",
+  "description": "Minimal project template for one microservice with typescript.",
   "main": "meta.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moleculerjs/moleculer-template-nano.git"
+    "url": "git+https://github.com/faeron/moleculer-template-nano-typescript.git"
   },
   "keywords": [],
   "author": "MoleculerJS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/moleculerjs/moleculer-template-nano/issues"
+    "url": "https://github.com/faeron/moleculer-template-nano-typescript/issues"
   },
-  "homepage": "https://github.com/moleculerjs/moleculer-template-nano#readme"
+  "homepage": "https://github.com/fearon/moleculer-template-nano-typescript#readme"
 }
