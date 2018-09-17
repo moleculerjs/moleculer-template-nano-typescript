@@ -1,4 +1,4 @@
-# Moleculer template: `nano-ts`
+# Moleculer template: `nano-typescript`
 :mortar_board: Minimal project template for one Moleculer microservice with typescript.
 
 ## Features
@@ -15,14 +15,14 @@
 To install use the [moleculer-cli](https://github.com/moleculerjs/moleculer-cli) tool.
 
 ```bash
-$ moleculer init nano-ts my-project
+$ moleculer init nano-typescript my-project
 ```
 
 ## Prompts
 ```
-$ moleculer init nano-ts my-project
+$ moleculer init nano-typescript my-project
 
-Template repo: moleculerjs/moleculer-template-nano
+Template repo: moleculerjs/moleculer-template-nano-typescript
 ? Select a transporter NATS (recommended)
 ? Would you like use cache? Yes
 ? Select a cacher solution Memory
