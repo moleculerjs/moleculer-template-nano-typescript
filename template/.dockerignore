@@ -1,3 +1,5 @@
+docker-compose.env
+docker-compose.yml
 .env
 Dockerfile
 node_modules
